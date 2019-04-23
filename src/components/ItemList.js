@@ -17,10 +17,8 @@ ItemList.propTypes = {
   articles: propTypes.array.isRequired,
 };
 
-const mapStateToProps = state => {
-  return {
-    articles: state.articles,
-  };
-};
+const mapStateToProps = state => ({
+  articles: state.articles,
+});
 
 export default connect(mapStateToProps)(ItemList);
